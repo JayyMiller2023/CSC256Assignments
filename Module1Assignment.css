@@ -1,0 +1,24 @@
+body
+{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;  
+}
+
+h1 
+{
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div
+{
+    color: white;
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
