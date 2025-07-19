@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: limegreen;
+            color: green;
+        }
+        header{
+            text-align: center;
+        }
+
+        #slideshow{
+            width: 500px;
+            /* try to center the dix with a 20px top/bottom margin; left + right should be centered automatically by the browser */
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .slide {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: green;
+            color: whitesmoke;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .buttons{
+            margin: 5px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enjoy the slideshow of forest themed images<h1>
+    <header>
+
+    <main>
+        <div id="slideshow">
+            <img src="" class="slide" alt="Decorative Slideshow" id="imgSlide">
+        </div>
+
+        <div id="buttons">
+            <button onclick="prevSlide();">Previous</button>
+            <button onclick="nextSlide();">Next</button>
+        </div>
+    </main>
+
+    <script>
+
+        // Array to store all image paths for the slideshow
+        let arrImages = [
+            "./Images/Forest1.jpg",
+            "./Images/Forest2.jpg",
+            "./Images/Forest3.jpg",
+            "./Images/Forest4.jpg",
+        ];
+
+        let currentImageIndex = 0;
+
+        function showImage(index) {
+            let imgSlide = document.getElementById("imgSlide");
+
+            imgSlide.src = arrImages[index]
+        }
+
+        // Move to the previous slide
+        function prevSlide() {
+            currentImageIndex--;
+
+            if(currentImageIndex < 0) {
+                currentImageIndex = arrImages.length - 1;
+            }
+
+            showImage(currentImageIndex);
+        }
+        // Move to the Next slide
+        function nextSlide() {
+            currentImageIndex++;
+
+            if(currentImageIndex >= arrImages.length) {
+                currentImageIndex = 0;
+            }
+
+            showImage(currentImageIndex);
+        }
+
+        showImage(currentImageIndex);
+    </script>
+</body>
+</html>
