@@ -1,0 +1,19 @@
+        body{
+            background-color: rgb(140, 140, 255);
+            color: rgb(0, 0, 0);
+        }
+
+        button{
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            background-color: rgb(51, 51, 255);
+            color: rgb(255, 255, 255);
+            padding: 5px;
+        }
+
+        #divMovieList{
+            border: 2px dashed whitesmoke;
+            width: 200px;
+            height: 200px;
+        }
