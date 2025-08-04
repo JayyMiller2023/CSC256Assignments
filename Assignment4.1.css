@@ -1,0 +1,36 @@
+/* Header Design */
+Header {
+    background-color: crimson;
+    color: whitesmoke;
+    text-align: center;
+    padding: 25px;
+}
+/* Section design */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* h2 Design */
+h2{
+    color: maroon;
+}
+
+/* input Design */
+input {
+    border-color: maroon;
+    border: 1px solid;
+}
+
+button {
+    background-color:maroon;
+    color: Whitesmoke;
+    border: 1px solid;
+}
+
+div {
+    text-size-adjust: 110%;
+    color: maroon;
+    font-size: 20px;
+    font-weight: bold;
+}
