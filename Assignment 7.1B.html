@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixlPanic</title>
+    <link rel="stylesheet" href="Assignment7.1.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Title of the page -->
+        <h1>PixlPanic</h1>
+        <br>
+        <!-- Links to interal sites -->
+        <a href="Assignment 7.1.html">Introduction</a>
+        <a href="Assignment 7.1B.html">ArtWork</a>
+        <a href="Assignment 7.1A.html">History</a>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <!-- Display for title -->
+        <h2 id="title"></h2>
+        <!-- Section for Image slide -->
+        <section>
+            <!-- Div for Previous Button -->
+            <div id="prevButton">
+                <!-- Button for prevSlide function -->
+                <button onclick="prevSlide();"> < </button>
+            </div>
+
+            <!-- Div for Image Display -->
+            <div id="slideshow">
+                <!-- Image for Pixel Art -->
+                <img src="" class="slide" alt="Pixel Art Slideshow" id="imgSlide">
+            </div>
+
+            <!-- Div for Next Button -->
+            <div id="nextButton">
+                <!-- Button for nextSlide function -->
+                <button onclick="nextSlide();"> > </button>
+            </div>
+        </section>
+
+        <!-- Display for the description for each Artwork -->
+        <p id="description"></p>
+
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 PixlPanic</p>
+    </footer>
+    <!-- Script for running the Image Slide -->
+    <script src="Assignment7.1.js">
+    </script>
+</body>
+</html>
